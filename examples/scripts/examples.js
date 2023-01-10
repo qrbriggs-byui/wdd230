@@ -13,20 +13,23 @@ const dateoptions = {
 
 // You can select individual items from the DOM using document.querySelector(selector). 
 // The value of selector matches a CSS selector you would use to identify elements on the page
-// document.querySelector('#today').textContent = today.toLocaleDateString('en-US', dateoptions);
-// document.getElementById('today').textContent = today.toLocaleDateString('en-US', dateoptions);
+document.querySelector('#today').textContent = today.toLocaleDateString('en-US', dateoptions);
 
-//document.querySelector('#today').textContent = today.toLocaleDateString();
+// You can also use document.getElementById, but it's not as powerful.
+document.getElementById('today').textContent = today.toLocaleDateString('en-US', dateoptions);
 
 // toLocaleTimeString includes the time component as well.
 document.querySelector('#today').textContent = today.toLocaleTimeString('en-US', dateoptions);
 
 // There's another way to show the date as well using template strings
-// const mydatestring = `${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`;
-// document.querySelector('#today').textContent = mydatestring;
+// Remember to add 1 to today.getMonth() because it uses a 0 based index.
+// Also remember .getDate() returns day of the month, .getDay() returns a 0-based day of the week
+const mydatestring = `${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`;
+document.querySelector('#today').textContent = mydatestring;
 
 // Notice the difference between textContent and innerHTML
-// document.querySelector('#temp').textContent = '32&deg;';
+// InnerHTML parses the HTML string, textContent does not.
+document.querySelector('#temp').textContent = '32&deg;';
 document.querySelector('#temp').innerHTML = '32&deg;';
 
 // To change the value of a form input item we have to use .value instead of .innerHTML or .textContent
@@ -39,4 +42,4 @@ function makeRed(item){
 }
 
 // To select multiple items from the DOM you can use querySelectorAll
-document.querySelectorAll("#today").forEach(makeRed);
+document.querySelectorAll(".somecontent").forEach(makeRed);
