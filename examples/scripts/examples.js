@@ -5,29 +5,32 @@ const today = new Date();
 
 // A list of valid options can be found here:
 // https://www.w3schools.com/jsref/jsref_tolocalestring.asp
-const dateoptions = options = {
-    year: 'numeric', 
-    month: 'numeric', 
+const dateoptions = {
+    year: '2-digit', 
+    month: 'long', 
     day: 'numeric'
 };
 
 // You can select individual items from the DOM using document.querySelector(selector). 
 // The value of selector matches a CSS selector you would use to identify elements on the page
-document.querySelector('#today').textContent = today.toLocaleDateString('en-US', dateoptions);
+// document.querySelector('#today').textContent = today.toLocaleDateString('en-US', dateoptions);
+// document.getElementById('today').textContent = today.toLocaleDateString('en-US', dateoptions);
+
+//document.querySelector('#today').textContent = today.toLocaleDateString();
 
 // toLocaleTimeString includes the time component as well.
-// document.querySelector('#today').textContent = today.toLocaleTimeString('en-US', dateoptions);
+document.querySelector('#today').textContent = today.toLocaleTimeString('en-US', dateoptions);
 
 // There's another way to show the date as well using template strings
-// const mydatestring = `${today.getMonth()}/${today.getDate()}/${today.getFullYear()}`;
+// const mydatestring = `${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`;
 // document.querySelector('#today').textContent = mydatestring;
 
 // Notice the difference between textContent and innerHTML
 // document.querySelector('#temp').textContent = '32&deg;';
-// document.querySelector('#temp').innerHTML = '32&deg;';
+document.querySelector('#temp').innerHTML = '32&deg;';
 
 // To change the value of a form input item we have to use .value instead of .innerHTML or .textContent
-// document.querySelector('#myinput').value = 'Carpe diem!';
+document.querySelector('#myinput').value = 'Carpe diem!';
 
 // This is called a "callback method".
 // This function is called once per item on a list of items when you use forEach
@@ -36,4 +39,4 @@ function makeRed(item){
 }
 
 // To select multiple items from the DOM you can use querySelectorAll
-// document.querySelectorAll(".somecontent").forEach(makeRed);
+document.querySelectorAll("#today").forEach(makeRed);
