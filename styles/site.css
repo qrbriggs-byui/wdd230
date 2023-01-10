@@ -8,9 +8,10 @@ body{
 header{
     display: flex;
     align-items: center;
-    background-color: blue;
+    background-color: rgb(64, 0, 64);
     color: white;
     border: 2px black solid;
+    border-radius: .5rem;
 }
 
 header img{
@@ -36,9 +37,10 @@ main h2{
 
 footer{
     align-items: center;
-    background-color: blue;
+    background-color: rgb(64, 0, 64);
     color: white;
     border: 2px black solid;
     text-align: center;
     padding: 1rem;
+    border-radius: .5rem;
 }
