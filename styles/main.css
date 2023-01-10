@@ -13,6 +13,7 @@ header{
     display: flex;
     align-items: center;
     color: white;
+    box-shadow: 8px 8px 8px  rgb(14, 108, 185);
 }
 
 header img{
@@ -42,4 +43,5 @@ footer{
     background-color:  rgb(14, 108, 185);    
     text-align: center;
     padding: 1rem;
+    box-shadow: 8px 8px 8px  rgb(14, 108, 185);
 }
