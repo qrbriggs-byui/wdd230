@@ -6,10 +6,14 @@
     <meta name="description" content="WDD 230 - Web Frontend Development - Quinn Briggs - Course assignment portal" >
     <meta name="author" content="Quinn Briggs">
     <title>Quinn Briggs - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
+    <div id="content">
     <header>
-        <img src="https://picsum.photos/150/150" alt="Quinn Briggs headshot">
+        <!-- <img src="https://picsum.photos/150/150" alt="Quinn Briggs headshot"> -->
+        <img src="images/qb-head.jpg" alt="Quinn Briggs headshot">
         <h1>Quinn R. Briggs</h1>
     </header>
     <nav>
@@ -18,21 +22,29 @@
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="chamber/">Chamber</a></li>
             <li><a href="https://www.byui.edu">BYU-Idaho</a></li>
-            <li><a href="">Scripture</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng&id=p22#p22">Scripture</a></li>
         </ul>
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development I</h2>
         <hr>
+        <!-- This is a horizontal rule -->
         <section class="card">
             <h3>Learning Activities</h3>
+            <ul>
+                <li>Week 1: <a href="#">Lesson 1</a></li>
+            </ul>
         </section>
         <section class="card">
             <h3>Information</h3>
+            <p>Weather Information: Placeholder</p>
+            <p>Visits to the Page: Placeholder</p>
         </section>
     </main>
     <footer>
-
+    <p>&copy;<span id="currentYear"></span> - Quinn Briggs - Idaho, USA</p>
+    <p id="lastModified"></p>
     </footer>
+    </div>
 </body>
 </html>
