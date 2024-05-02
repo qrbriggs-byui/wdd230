@@ -1,9 +1,15 @@
-// Sets the current year
-let year = new Date().getFullYear()
-let currentYearSpan = document.querySelector("#currentYear")
-currentYearSpan.innerHTML = `${year}`
+// Function to populate the current year
+function populateCurrentYear() {
+    var currentYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currentYear;
+}
 
-// Sets the last modified date
-let lastModifedParagraph = document.getElementById("lastModified")
-lastModifedParagraph.innerHTML = `Last Modified: ${document.lastModified}`
+// Function to populate the last modified date
+function populateLastModified() {
+    var lastModified = document.lastModified;
+    document.getElementById("lastModified").textContent = "Last modified: " + lastModified;
+}
 
+// Call the functions to populate the current year and last modified date
+populateCurrentYear();
+populateLastModified();
