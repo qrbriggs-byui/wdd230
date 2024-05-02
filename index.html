@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quinn Briggs - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development Quinn Briggs course assignment portal">
     <meta name="author" content="Quinn Briggs">
+    <meta name="og:title" content="WDD230 Home Page for Quinn Briggs">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://qrbriggs-byui.github.io/wdd230/images/qb-head.jpg">
+    <meta name="og:url" content="https://qrbriggs-byui.github.io/wdd230/index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
     <script src="scripts/getdates.js" defer></script>
     <link rel="icon" href="favicon.ico">
+    <title>Quinn Briggs - WDD 230 - Web Frontend Development</title>   
 </head>
 <body>
     <div id="content">
@@ -30,23 +36,25 @@
         <main>
             <h2>WDD 230: Web Frontend Development</h2>
             <hr>
-            <section class="card">
-                <h3>Learning Activities</h3>
-                <ul id="learning-activities">
-                    <li>Week 1: <a href="lesson01/holygrail.html">Holy Grail Layout</a></li>
-                    <li>Week 2: 
-                        <a href="lesson02/design.html">Design Principles Exercise</a> | 
-                        <a href="lesson02/media-query.html">Media Query Example</a> |
-                        <a href="lesson02/design-principles.html">Design Principles Template</a>
-                    </li>
-                </ul>
-            </section>
-        
-            <section class="card">
-                <h3>Information</h3>
-                <p>Weather: <span id="weather">Placeholder</span></p>
-                <p>Number of visits: <span id="visits">Placeholder</span></p>
-            </section>
+            <div id="cards">
+                <section class="card">
+                    <h3>Learning Activities</h3>
+                    <ul id="learning-activities">
+                        <li>Week 1: <a href="lesson01/holygrail.html">Holy Grail Layout</a></li>
+                        <li>Week 2: 
+                            <a href="lesson02/design.html">Design Principles Exercise</a> | 
+                            <a href="lesson02/media-query.html">Media Query Example</a> |
+                            <a href="lesson02/design-principles.html">Design Principles Template</a>
+                        </li>
+                    </ul>
+                </section>
+            
+                <section class="card">
+                    <h3>Information</h3>
+                    <p>Weather: <span id="weather">Placeholder</span></p>
+                    <p>Number of visits: <span id="visits">Placeholder</span></p>
+                </section>
+            </div>
         </main>
         <footer>
             <p>&copy; <span id="currentYear">2024</span> Quinn Briggs, Rexburg, Idaho, USA</p>

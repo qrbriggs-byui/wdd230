@@ -32,14 +32,14 @@ nav ul{
     text-align: center;
     background-color: var(--nav-color);
     padding-inline-start: 0px;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; */
 }
 
 nav ul li{
     padding: 1rem;
-    /* width: 100%; */
+    width: 100%;
 }
 
 nav ul li:hover{
@@ -48,7 +48,7 @@ nav ul li:hover{
 }
 
 nav ul li a{
-    /* display: block; */
+    display: block;
     text-decoration: none;
     color: white;    
 }
