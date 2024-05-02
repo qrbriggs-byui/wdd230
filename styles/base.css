@@ -12,12 +12,10 @@ body{
     background-color: var(--body-color);
     color: var(--text-color);
     font-family: "Open Sans", sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 #content{
-    max-width: 800px;
+    max-width: 1024px;
     margin: 0 auto;
     background-color: var(--card-color);
 }
@@ -34,10 +32,14 @@ nav ul{
     text-align: center;
     background-color: var(--nav-color);
     padding-inline-start: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 nav ul li{
     padding: 1rem;
+    /* width: 100%; */
 }
 
 nav ul li:hover{
@@ -46,7 +48,7 @@ nav ul li:hover{
 }
 
 nav ul li a{
-    display: block;
+    /* display: block; */
     text-decoration: none;
     color: white;    
 }
