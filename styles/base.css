@@ -26,15 +26,32 @@ body{
     background-color: var(--header-color);
     border-radius: 10px;
 }
+#menu-button{    
+    background-color: inherit;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+#menu-button::before{
+    content: "≡";
+}
+
+#menu-button.open::before{
+    content: "X";
+}
 
 nav ul{
     list-style: none;
     text-align: center;
     background-color: var(--nav-color);
     padding-inline-start: 0px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-around; */
+    display: none;
+}
+
+nav ul.open{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 nav ul li{
@@ -106,4 +123,8 @@ footer{
 
 #content main hr{
     height: 3px;
+}
+
+.map iframe{
+    width: 100%;
 }
