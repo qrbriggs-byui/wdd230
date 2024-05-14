@@ -27,7 +27,7 @@ body{
     border-radius: 10px;
 }
 #menu-button{    
-    background-color: inherit;
+    background-color: inherit;  
     font-size: 2rem;
     padding: .5rem;
 }

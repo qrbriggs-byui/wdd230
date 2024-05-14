@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Example</title>
+    <style>
+        .foo p{
+            counter-increment: paragraphs;
+        }
+        p::before{
+            content: "[ID=" counter(paragraphs) "]";
+        }
+        .foo p:nth-child(2){
+            background-color: pink; 
+        }
+        p:nth-child(odd){
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur voluptates vero saepe ducimus laboriosam molestias commodi rerum fuga est?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur voluptates vero saepe ducimus laboriosam molestias commodi rerum fuga est?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur voluptates vero saepe ducimus laboriosam molestias commodi rerum fuga est?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur voluptates vero saepe ducimus laboriosam molestias commodi rerum fuga est?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur voluptates vero saepe ducimus laboriosam molestias commodi rerum fuga est?</p>
+    <div class="foo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur voluptates vero saepe ducimus laboriosam molestias commodi rerum fuga est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur voluptates vero saepe ducimus laboriosam molestias commodi rerum fuga est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur voluptates vero saepe ducimus laboriosam molestias commodi rerum fuga est?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur voluptates vero saepe ducimus laboriosam molestias commodi rerum fuga est?</p>    
+    </div>
+</body>
+</html>
