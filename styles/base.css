@@ -70,9 +70,13 @@ nav ul li a{
     color: white;    
 }
 
+nav ul li a:hover{
+    color: black;
+}
+
 #topheader h1{
     width: 600px;
-    margin: 50px 0px;
+    margin: 50px 0px 0px 0px;
 }
 
 #topheader img{
@@ -127,4 +131,12 @@ footer{
 
 .map iframe{
     width: 100%;
+}
+
+#learning-activities li a:visited{
+    color: white;
+}
+
+#learning-activities li a:hover{
+    color: lightgrey;
 }
