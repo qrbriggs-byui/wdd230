@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Example</title>
+    <style>
+        section{
+            width: 600px;
+            margin: 0 auto;
+            background-color: beige;
+            border: 2px solid black;
+            text-align:center;
+        }
+        .overlay{
+            background-color: white;
+            color: black;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            opacity: 0.8;            
+        }
+        section{
+            position: relative;
+        }
+        button{
+            position: absolute;
+            left: 50px;
+            bottom: 40px;
+        }
+        #myp{
+            background-color: purple;
+            height: 100px;    
+            position: relative;       
+        }
+    </style>
+</head>
+<body>    
+    <section>
+        <img src="./images/qbhead-400.jpg">
+        <div class="overlay">
+            <h3>Overlay Text</h3>            
+        </div>
+    </section>
+    <p id="myp">
+        <button>Click Me</button>            
+    </p>
+</body>
+</html>
