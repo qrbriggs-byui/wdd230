@@ -4,6 +4,15 @@ datespan.innerText = new Date().getFullYear()
 let lastmodifiedspan = document.querySelector("#lastModified")
 lastmodifiedspan.innerText = document.lastModified
 
+// Hamburger menu
+
+let menubutton = document.getElementById("menubutton")
+let navbar = document.getElementById("navbar")
+menubutton.addEventListener("click", () => {
+    menubutton.classList.toggle("open")
+    navbar.classList.toggle("open")
+})
+
 // dark mode stuff
 let darkbutton = document.getElementById("dark-mode")
 darkbutton.addEventListener("click", () =>{    

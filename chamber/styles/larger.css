@@ -43,10 +43,11 @@
         max-width: 250px;
     }
     .weather{
-        grid-column: 3/4;
+        grid-column: 3/4;        
         align-content: center;
+        border-left: 2px var(--nav-color) solid;
     }
- 
+
     .hero button{
         font-size: 1.5rem;
     }

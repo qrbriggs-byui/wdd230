@@ -19,7 +19,15 @@
         width: 100px;
     }
     #navbar{     
+        display: flex;
         flex-direction: row;
+    }
+    #navbar.open{     
+        display: flex;
+        flex-direction: row;
+    }
+    #menubutton{
+        display: none;
     }
     
 }
