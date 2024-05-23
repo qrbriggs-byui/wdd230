@@ -1,0 +1,25 @@
+@media screen and (min-width: 800px){
+    .event-cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    .event-card{
+        width: 100%;
+    }
+    .spotlights{
+        display: flex;    
+    }
+
+    .spotlight{
+        width: 100%; 
+        min-width: 150px;       
+    }
+
+    .spotlight img{
+        width: 100px;
+    }
+    #navbar{     
+        flex-direction: row;
+    }
+    
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,59 +18,93 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
 </head>
-<body>
-    <header>
-        <h1>Hello World!</h1>
-    </header>
-    <nav>
-        <ul>
-            <li>Items 1</li>
-            <li>Items 2</li>
-            <li>Items 3</li>
-            <li>Items 4</li>
-        </ul>
-    </nav>
-    <main>
-        <section class="hero">
-            <img src="https://picsum.photos/800/400" alt="hero image">
-            <button>Call to Action!</button>
-        </section>
-        <section class="events">
-            <h3>Events</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nihil quae, architecto sequi accusamus dolorem illo pariatur quo corporis. Beatae repudiandae porro explicabo quo et ipsa tempora animi. Ipsa rem magni at debitis, quisquam praesentium incidunt, culpa id mollitia, officiis ex. Iste natus porro commodi accusamus aperiam eius, illum possimus iure sequi fuga voluptate aliquam dolore quo ipsum nostrum, vero, odit inventore maiores! Laboriosam itaque mollitia, molestias blanditiis aut consectetur cumque placeat. Exercitationem sapiente illo incidunt pariatur delectus repudiandae, aut, nam voluptatem quaerat deserunt neque nisi laborum maxime adipisci iure non doloribus. Quod quae architecto facere nemo delectus consectetur sequi.</p>
-        </section>
-        <section class="weather">
-            <h3>Weather</h3>
-            <p>Current Conditions: Ugly</p>
-            <p>Current Temp: 100&deg;F</p>
-        </section>
-        <section class="spotlights">
-            <section class="spotlight spotlight1">
-                <h3>Spotlight 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur neque! Voluptas non, facere ab animi excepturi atque laudantium a iusto quas impedit incidunt facilis illum vero itaque error, modi beatae optio aliquid debitis culpa. Nemo blanditiis possimus facilis officiis enim dolorum cum odio sequi! Esse provident laborum delectus assumenda?</p>
-            </section>
-            <section class="spotlight spotlight2">
-                <h3>Spotlight 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur neque! Voluptas non, facere ab animi excepturi atque laudantium a iusto quas impedit incidunt facilis illum vero itaque error, modi beatae optio aliquid debitis culpa. Nemo blanditiis possimus facilis officiis enim dolorum cum odio sequi! Esse provident laborum delectus assumenda?</p>                
-            </section>
-            <section class="spotlight spotlight3">
-                <h3>Spotlight 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur neque! Voluptas non, facere ab animi excepturi atque laudantium a iusto quas impedit incidunt facilis illum vero itaque error, modi beatae optio aliquid debitis culpa. Nemo blanditiis possimus facilis officiis enim dolorum cum odio sequi! Esse provident laborum delectus assumenda?</p>
-                
-            </section>
 
-        </section>
-    </main>
-    <footer>
-        <img src="https://picsum.photos/100/100" alt="logo image">
-        <p>Teton Idaho Chamber of Commerce</p>
-        <p>123 Main Street</p>
-        <p>Teton, ID 83451</p>
-        <p>info@tetonchamber.org</p>
-        <hr>
-        <p>&copy;<span id="currentYear"></span> Quinn Briggs</p>
-        <p>WDD 230 Project</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-    </footer>
+<body>
+    <div id="content">
+        <header>
+            <div><img src="images/teton-idaho-logo-small.jpg"></div>
+            <h1>Teton Idaho Chamber of Commerce</h1>
+            <button id="dark-mode"></button>
+        </header>
+        <nav>
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="hero">
+                <img src="images/teton-granary-med.jpg" alt="hero image">
+                <button>Join the Chamber</button>
+            </section>
+            <section class="events">
+                <h2>Events</h2>
+                <div class="event-cards">
+                    <div class="event-card">
+                        <h3>4th Of July Celebration</h3>
+                        <img src="images/4th-of-july.jpg">
+                        <p>This year's 4th of July parade will be better than ever! Join us for all the patriotic fun!
+                        </p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Community Clean-Up</h3>
+                        <img src="images/clean-up.jpg">
+                        <p>Join the Teton Elementary students in their annual community clean up. The clean-up starts on
+                            May
+                            30th at 9:00 A.M. at the elementary school. See you there!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="weather-card">
+                    <img src="images/sunny.png">
+                    <p>Current Conditions: <span id="current-conditions">Partly Cloudy</span></p>
+                    <p>Current Temp: <span id="temperature">50&deg;F</span></p>
+                </div>
+            </section>
+            <section class="spotlights">
+                <section class="spotlight spotlight1">
+                    <h3>Teton Turf and Tree</h3>
+                    <img src="images/teton-turf.jpg" alt="Teton Turf and Tree Logo">
+                    <p>Growing trees since 1990 and sod since 1996, Teton Turf & Tree Farms is the premier Rexburg sod
+                        grower and tree wholesaler in Southeastern Idaho.</p>
+                </section>
+                <section class="spotlight spotlight2">
+                    <h3>Shogun Crafts</h3>
+                    <img src="images/shogun-crafts.jpg" alt="Shogun Crafts Logo">
+                    <p>We are fabric store that has been serving the public for 10+ years. We offer services such as
+                        quilting quilts and hemstitching receiving blankets.</p>
+                </section>
+                <section class="spotlight spotlight3">
+                    <h3>Tacos Gonzales</h3>
+                    <img src="images/tacos-gonzales.jpg" alt="Tacos Gonzales Logo">
+                    <p>Family owned, Located in Teton City, right behind the post office, homemade tortillas every day!
+                    </p>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div class="main-footer">
+                <div>
+                    <img src="images/teton-idaho-logo-med.jpg" alt="logo image">
+                </div>
+                <div>
+                    <p>Teton Idaho Chamber of Commerce</p>
+                    <p>123 Main Street</p>
+                    <p>Teton, ID 83451</p>
+                    <p><a href="mailto:info@tetonchamber.org">info@tetonchamber.org</a></p>
+                </div>
+            </div>
+            <div class="base-footer">
+                <p>&copy;<span id="currentYear"></span> Quinn Briggs</p>
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
