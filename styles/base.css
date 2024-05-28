@@ -140,3 +140,24 @@ footer{
 #learning-activities li a:hover{
     color: lightgrey;
 }
+
+.temple{
+    text-align: center;
+    position: relative;
+}
+
+.temple img{
+    border: 2px black solid;
+    width: 100%;
+}
+
+.temple p{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-color: white;
+    color: black;
+    padding: .5rem;
+    border: 1px black solid;
+    border-radius: 4px;
+}
