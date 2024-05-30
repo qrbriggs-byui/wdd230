@@ -51,5 +51,8 @@
     .hero button{
         font-size: 1.5rem;
     }
+    .hero p::before{
+        content: "larger";
+    }
 
 }

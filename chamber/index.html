@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 
 <body>
     <div id="content">
         <header>
-            <div><img src="images/teton-idaho-logo-transparent-med.png"></div>
+            <div><img src="images/teton-idaho-logo-transparent-med.webp"></div>
             <h1>Teton Idaho Chamber of Commerce</h1>
             <button id="dark-mode"></button>
         </header>
@@ -37,7 +38,13 @@
         </nav>
         <main>
             <section class="hero">
-                <img src="images/teton-granary-med.jpg" alt="hero image">
+                <!-- <img src="images/teton-granary-med.jpg" alt="hero image"> -->
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/wdd230-org-600.webp">                    
+                    <source media="(max-width: 1024px)" srcset="images/wdd230-org-800.webp">                    
+                    <img src="images/wdd230-org-1024.webp" alt="large image">
+                </picture>
+                <p></p>
                 <button>Join the Chamber</button>
             </section>
             <section class="events">
@@ -63,7 +70,9 @@
                 <div class="weather-card">
                     <img src="images/sunny.png">
                     <p>Current Conditions: <span id="current-conditions">Partly Cloudy</span></p>
-                    <p>Current Temp: <span id="temperature">50&deg;F</span></p>
+                    <p>Current Temp: <span id="temperature">30</span>&deg;F</p>
+                    <p>Current Wind: <span id="windspeed">25</span> MPH</p>
+                    <p>Windchill: <span id="windchill"></span></p>
                 </div>
             </section>
             <section class="spotlights">
@@ -90,7 +99,7 @@
         <footer>
             <div class="main-footer">
                 <div>
-                    <img src="images/teton-idaho-logo-transparent-med.png" alt="logo image">
+                    <img src="images/teton-idaho-logo-transparent-med.webp" alt="logo image">
                 </div>
                 <div>
                     <p>Teton Idaho Chamber of Commerce</p>

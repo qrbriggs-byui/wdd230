@@ -30,4 +30,8 @@
         display: none;
     }
     
+    .hero p::before{
+        content: "medium";
+    }
+    
 }

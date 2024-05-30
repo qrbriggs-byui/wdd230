@@ -148,7 +148,7 @@ footer{
 
 .temple img{
     border: 2px black solid;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .temple p{
@@ -161,3 +161,7 @@ footer{
     border: 1px black solid;
     border-radius: 4px;
 }
+
+/* .map{
+    display: none;
+} */

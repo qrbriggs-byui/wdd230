@@ -108,6 +108,19 @@ header div img{
     max-height: 400px;
 }
 
+.hero p{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.hero p::before{
+    content: "small";
+    background-color: grey;
+    opacity: .5;
+    font-size: 2rem;    
+}
+
 .hero img{
     width: 100%;
 }
