@@ -141,6 +141,10 @@ footer{
     color: lightgrey;
 }
 
+#learning-activities li{
+    padding: .25rem;
+}
+
 .temple{
     text-align: center;
     position: relative;
