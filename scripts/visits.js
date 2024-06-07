@@ -5,7 +5,7 @@ visitsSpan.innerText = visits
 function getNumberOfVisits(){
     let visitcount = localStorage.getItem("site-visits")
     if (visitcount == null){
-        visitcount = "1"
+        visitcount = 0
     }
     else{
         visitcount = parseInt(visitcount)
