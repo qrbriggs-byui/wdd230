@@ -1,0 +1,42 @@
+label{
+    display: block;
+}
+input{
+    display: block;
+    padding: .5rem;
+    margin-bottom: 1rem;    
+}
+textarea{
+    display: block;
+    padding: .5rem;
+}
+label{
+    margin-top: .5rem;
+}
+.radio{
+    display: inline;
+    margin: 8px 8px 8px 0px;
+}
+main{
+    display: flex;
+}
+section{
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 1rem;
+    width: 50%;
+    min-width: 400px;
+}
+#go{
+    margin-top: 1rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@media(max-width: 800px){
+    main{
+        display: block;
+    }
+}

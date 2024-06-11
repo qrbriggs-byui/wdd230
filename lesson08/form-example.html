@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        main{
+            display: flex;
+        }
+        section{
+            width: 50%;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid black;
+            min-width: 400px;
+        }
+        label{
+            display: block;
+            font-size: .75rem;
+        }
+        input{
+            display: block;
+            margin-bottom: .5rem;
+            padding: .5rem;
+        }
+        textarea{
+            display: block;
+            margin-bottom: .5rem;
+        }
+        .myradio{
+            display: inline;
+            margin: 0px 5px 8px 0px;
+        }
+        .mysubmit{
+            font-size: 1.5rem;
+            background-color: limegreen;
+            color: yellow;
+            padding: .5rem;
+        }
+
+        @media(max-width: 800px){
+            main{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <form method="GET" action="page2.html">
+                <label>First Name<input name="fname" type="text" value="" placeholder="Your first name" size="30" maxlength="30" required></label>
+                <label>Last Name<input name="lname" type="text" value="" placeholder="Your first name" size="30" maxlength="30" required></label>
+                <p>Temperature:</p>
+                <label><input class="myradio" name="temp" type="radio" value="hot"> Hot</label>
+                <label><input class="myradio" name="temp" type="radio" value="warm"> Warm</label>
+                <label><input class="myradio" name="temp" type="radio" value="cold"> Cold</label>
+                <label>Description:<textarea name="description" cols="40" rows="5"></textarea></label>
+                <input class="mysubmit" type="submit" name="go" value="GO AND DO!">
+            </form>
+        </section>
+        <section>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum eius mollitia minus expedita, atque, officiis provident officia, praesentium soluta quas illum dicta sed neque deserunt exercitationem voluptatibus. Expedita laudantium repellendus accusantium reprehenderit. Explicabo, dignissimos? Sapiente, blanditiis. Deserunt eligendi blanditiis error corporis saepe fugit praesentium? Sint, perferendis similique. Eius asperiores, accusamus ratione numquam voluptatibus tenetur mollitia quos sunt doloribus sequi nulla voluptas suscipit incidunt unde officia rerum? Minus reiciendis labore debitis nam modi earum enim molestias temporibus repellendus. Tempora nostrum ad hic adipisci voluptatibus doloremque odio tempore rem eligendi accusantium. Maxime vitae natus adipisci tenetur magnam sit cum doloremque voluptatem tempore inventore. Voluptate impedit facere tenetur perferendis tempora explicabo nihil magnam sapiente ullam iure, odit dicta maxime corporis fugit vel dignissimos distinctio rerum error quo, saepe reiciendis! Ipsam, accusamus. Maiores maxime nobis quibusdam sint voluptate, facilis totam eaque provident optio delectus velit distinctio nihil quia tempora, ea consequatur neque nisi sit veniam necessitatibus, cum voluptatem saepe? Distinctio quas similique ipsum doloremque, soluta molestias ipsam quia nulla accusantium iusto alias ullam necessitatibus natus autem exercitationem. Sed totam amet eveniet, optio libero perferendis, recusandae quo nulla autem dolor itaque. Excepturi dicta voluptate maiores in sapiente illum velit alias provident dignissimos! Quidem, ducimus?
+        </section>
+    </main>
+</body>
+</html>
