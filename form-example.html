@@ -29,12 +29,12 @@
         </header>
         <main>
             <form method="get" action="record.html">
-                <label>Username 
+                <label>Username<sup class="redstar">*</sup>
                     <input type="text" id="username" name="username" required></label>
-                <label>Password (at least 8 chars, alphanumeric only)
+                <label>Password<sup class="redstar">*</sup> (at least 8 chars, alphanumeric only)
                     <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}">
                 </label>
-                <label>Repeat Password <span id="message"></span>
+                <label>Repeat Password<sup class="redstar">*</sup> <span id="message"></span>
                     <input type="password" id="repeat" name="repeat" name="repeat" required>
                 </label>
                 <label>Email 
