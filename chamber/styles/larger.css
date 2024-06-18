@@ -55,4 +55,8 @@
         content: "larger";
     }
 
+    .discover-main img{
+        width: 600px;
+    }
+
 }

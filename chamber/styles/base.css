@@ -218,26 +218,35 @@ footer a{
 
 /* Discover Page Styles */
 
-#discover-main{
-    display: block;
+.discover-main section{
+    border: 2px black solid;
+    margin: 1rem;
 }
 
-#discover-images{
+.discover-image{
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    min-width: 432px;    
 }
 
-.discover-images img{
-    border: 5px solid var(--hover-background-color);
-    transition: opacity 2s;    
+.discover-image div {    
+    margin: 1rem;    
 }
 
-.discover-images img:hover{
-    opacity: 0.5; 
+.discover-demographics h2 {    
+    margin: 1rem;
 }
 
-#discover-demographics, #discover-message, #discover-events{
-    border: 1px solid black;    
-    padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: 5px 5px 5px var(--hover-background-color)
+.discover-demographics h3 {    
+    margin: 1rem;
+}
+
+.discover-main section {    
+    margin: 1rem;
+}
+
+.discover-main img {
+    width: 400px;
+    height: auto;
 }
