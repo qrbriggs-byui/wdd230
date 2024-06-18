@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .table-view {
+            flex: 1;
+        }
+        
+        .card-view {
+            flex: 1;
+            display: none;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+        }        
+
+        .container table, .container table td, .container table th{
+            border: 1px solid black;            
+            border-collapse: collapse;
+            padding: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="toggleView()">Toggle View</button>
+
+    <div class="container">
+        <div class="table-view">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123 Main St</td>
+                        <td>(555) 555-5555</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>456 Elm St</td>
+                        <td>(555) 555-1234</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card-view">
+            <div class="card">
+                <img src="https://placekitten.com/200/200" alt="Profile Image">
+                <p>Name: John Doe</p>
+                <p>Address: 123 Main St</p>
+                <p>Phone Number: (555) 555-5555</p>
+            </div>
+            
+            <div class="card">
+                <img src="https://placekitten.com/200/200" alt="Profile Image">
+                <p>Name: Jane Smith</p>
+                <p>Address: 456 Elm St</p>
+                <p>Phone Number: (555) 555-1234</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleView() {
+            const tableView = document.querySelector('.table-view');
+            const cardView = document.querySelector('.card-view');
+
+            if (tableView.style.display === 'none') {
+                tableView.style.display = 'block';
+                cardView.style.display = 'none';
+            } else {
+                tableView.style.display = 'none';
+                cardView.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
