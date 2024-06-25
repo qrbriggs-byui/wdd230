@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Quinn Briggs">
+    <meta name="description" content="WDD 230 - BYU Idaho - Spring 2024 - Chamber Project - Directory Page">
+    <meta name="og:title" content="Teton Idaho Chamber of Commerce Site">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://qrbriggs-byui.github.io/wdd230/images/qb-head.jpg">
+    <meta name="og:url" content="https://qrbriggs-byui.github.io/wdd230/chamber/directory.html">
+    <title>Teton Idaho Chamber of Commerce - Directory</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/header-footer.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div><img src="images/teton-idaho-logo-transparent-med.webp"></div>
+            <h1>Teton Idaho Chamber of Commerce</h1>
+            <button id="dark-mode"></button>
+        </header>
+        <nav>
+            <button id="menubutton"></button>
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+        <main class="directory-main">
+            <div id='directory-selector'>
+                <button id="directory-grid" class="active">GRID</button>
+                <button id="directory-list">LIST</button>
+            </div>
+            <div id='directory-data' class='directory-cards'>
+            </div>
+        </main>
+        <footer>
+            <div class="main-footer">
+                <div>
+                    <img src="images/teton-idaho-logo-transparent-med.webp" alt="logo image">
+                </div>
+                <div>
+                    <p>Teton Idaho Chamber of Commerce</p>
+                    <p>123 Main Street</p>
+                    <p>Teton, ID 83451</p>
+                    <p><a href="mailto:info@tetonchamber.org">info@tetonchamber.org</a></p>
+                </div>
+            </div>
+            <div class="base-footer">
+                <p>&copy;<span id="currentYear"></span> Quinn Briggs</p>
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
