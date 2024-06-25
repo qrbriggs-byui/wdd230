@@ -1,4 +1,4 @@
-const WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?lat=43.8870929&lon=-111.6733693&appid=be32833d7239c63fb1ec02ebf74bf9fc&units=imperial";
+const WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?lat=43.8870929&lon=-111.6733693&appid={API KEY HERE}&units=imperial";
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
