@@ -410,3 +410,20 @@ footer a{
 .directory-list section:nth-child(even) {
     background-color: var(--card-color)
 }
+
+/* Meet & Greet */
+.meet-greet{
+    background-color: var(--card-color);
+    grid-column: 1/4;
+    text-align: center;
+    display: none;
+}
+
+.meet-greet.show{
+    display: block;
+}
+
+.meet-greet button{
+    background-color: var(--nav-color);
+    color: white;
+}
