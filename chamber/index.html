@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/header-footer.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/meet-greet.js" defer></script>
 </head>
 
@@ -31,7 +31,7 @@
         <nav>
             <button id="menubutton"></button>
             <ul id="navbar">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -72,9 +72,10 @@
                 <div class="weather-card">
                     <img src="images/sunny.png">
                     <p>Current Conditions: <span id="current-conditions">Partly Cloudy</span></p>
+                    <p><img id="weather-icon" src="" alt="weather-conditions"></p>
                     <p>Current Temp: <span id="temperature">20</span>&deg;F</p>
                     <p>Current Wind: <span id="windspeed">10</span> MPH</p>
-                    <p>Windchill: <span id="windchill"></span></p>
+                    <!-- <p>Windchill: <span id="windchill"></span></p> -->
                 </div>
             </section>
             <section class="spotlights">
