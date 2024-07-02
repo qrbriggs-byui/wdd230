@@ -164,11 +164,11 @@ header div img{
     text-align: center;   
 }
 
-.weather img{
+/* .weather img{
     height: 125px;
     border: 1px var(--card-color) solid;
     padding: 1rem;
-}
+} */
 
 .weather-card{
     border: 2px solid var(--nav-color);
@@ -426,4 +426,9 @@ footer a{
 .meet-greet button{
     background-color: var(--nav-color);
     color: white;
+}
+
+#forecast{
+    display: flex;
+    justify-content: space-around;
 }

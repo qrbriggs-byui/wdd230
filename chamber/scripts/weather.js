@@ -14,7 +14,7 @@ function displayResults(data){
     weatherIcon.setAttribute("src","https://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png");
 }
 
-async function apiFetch() {
+async function getCurrentWeather() {
     try {
       const response = await fetch(WEATHER_URL);
       if (response.ok) {
@@ -28,6 +28,22 @@ async function apiFetch() {
         console.log(error);
     }
   }
-  
-  apiFetch();
+
+  async function getCurrentWeather() {
+    try {
+      const response = await fetch(WEATHER_URL);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // testing only
+        displayResults(data); // uncomment when ready
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+
+
+  getCurrentWeather();
   
